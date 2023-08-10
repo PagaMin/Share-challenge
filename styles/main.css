@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+body {
+  background-color: hsl(210, 46%, 95%);
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.drawers {
+  width: 17.875rem;
+  height: 17.5rem;
+  border-radius: 0.625rem 0px 0px 0.625rem;
+}
+
+.right {
+  padding: 2rem;
+  background-color: #fff;
+  width: 27.813rem;
+  height: 17.5rem;
+  border-radius: 0px 0.625rem 0.625rem 0px;
+}
+
+.title {
+  color: hsl(217, 19%, 35%);
+  font-size: 1.15rem;
+}
+
+.desc {
+  font-size: 0.9rem;
+  color: hsl(214, 17%, 51%);
+  margin-top: 0.8rem;
+}
+
+.avatar {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.text-share {
+  width: 21.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.avatar-michelle {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+
+.name {
+  color: hsl(217, 19%, 35%);
+  font-size: 0.9rem;
+  margin-left: 1rem;
+}
+
+.date {
+  color: hsl(214, 17%, 51%);
+  font-size: 0.8rem;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  margin-right: 10px;
+  background-color: hsl(210, 46%, 95%);
+  border: none;
+  border-radius: 50%;
+  padding: 12px;
+}
+
+.share {
+  cursor: initial;
+  width: 15.625rem;
+  padding: 10px;
+  background-color: hsl(217, 19%, 35%);
+  margin-top: 35px;
+  border-radius: 0.688rem;
+  position: relative;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.share-text {
+  letter-spacing: 4px;
+  color: #9eafc2;
+  font-weight: 500;
+}
+
+@media (max-width: 1000px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .drawers {
+    border-radius: 0.625rem 0.625rem 0px 0px;
+    width: 20.438rem;
+  }
+  .right {
+    margin-top: -10px;
+    border-radius: 0px 0px 0.625rem 0.625rem;
+    width: 20.438rem;
+    height: 19.5rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 530px) {
+  .share {
+    margin-right: 200px;
+  }
+}/*# sourceMappingURL=main.css.map */
